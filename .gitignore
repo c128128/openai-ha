@@ -130,3 +130,8 @@ dmypy.json
 
 # VS Code
 .vscode/
+
+cli_proxy_config/
+codex.json
+docker-compose.yml
+test_config/
