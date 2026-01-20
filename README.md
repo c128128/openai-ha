@@ -22,7 +22,7 @@ Follow [HACLIProxyAPI setup instructions](https://github.com/c128128/HACLIProxyA
 
 3. Go to **Settings** → **Devices & Services** → **Add Integration**.
 
-4. Search for **Azure OpenAI Conversation** and add it.
+4. Search for **OpenAI Conversation** and add it.
 
 5. Configure the integration:
    - **API Base URL**: `http://homeassistant.local:8787/v1`

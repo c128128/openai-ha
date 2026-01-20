@@ -1,5 +1,5 @@
 {
-  "name": "Azure OpenAI Conversation",
+  "name": "OpenAI Conversation",
   "content_in_root": false,
   "filename": "azure_openai_conversation.zip",
   "homeassistant": "2023.4.0",

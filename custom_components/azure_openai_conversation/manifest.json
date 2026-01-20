@@ -1,6 +1,6 @@
 {
   "domain": "azure_openai_conversation",
-  "name": "Azure OpenAI Conversation",
+  "name": "OpenAI Conversation",
   "after_dependencies": ["assist_pipeline", "intent"],
   "codeowners": ["@joselcaguilar"],
   "config_flow": true,
