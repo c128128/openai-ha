@@ -349,7 +349,6 @@ class AzureOpenAIConversationEntity(
                 ),
                 "top_p": options.get(CONF_TOP_P, RECOMMENDED_TOP_P),
                 "temperature": options.get(CONF_TEMPERATURE, RECOMMENDED_TEMPERATURE),
-                "user": chat_log.conversation_id,
                 "stream": True,
             }
             if tools:

@@ -177,7 +177,6 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
                 "temperature": entry.options.get(
                     CONF_TEMPERATURE, RECOMMENDED_TEMPERATURE
                 ),
-                "user": call.context.user_id,
                 "store": False,
             }
 
@@ -276,14 +275,4 @@ async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     return await hass.config_entries.async_unload_platforms(entry, PLATFORMS)
 
 def normalize_azure_endpoint(uri: str) -> str:
-    """Normalize Azure OpenAI endpoint URI by ensuring it ends with /openai/v1/."""
-
-    normalized = uri.rstrip('/')
-
-    if not normalized.endswith('/openai/v1'):
-        normalized += '/openai/v1'
-
-    if not normalized.endswith('/'):
-        normalized += '/'
-
-    return normalized
+    return uri
