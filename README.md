@@ -4,8 +4,6 @@ This is a fork of https://github.com/joselcaguilar/azure-openai-ha
 
 This is equivalent to the built-in [OpenAI Conversation integration](https://www.home-assistant.io/integrations/openai_conversation/). The difference is that you can use a custom base url.
 
-[![image](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=c128128&repository=openai-ha&category=integration)
-
 ## Using with HACLIProxyAPI
 
 This integration works great with [HACLIProxyAPI](https://github.com/c128128/HACLIProxyAPI) - a Home Assistant add-on that provides a unified API endpoint for AI services (OpenAI, Claude, Gemini, etc.) using your existing subscriptions.
@@ -16,7 +14,9 @@ Follow [HACLIProxyAPI setup instructions](https://github.com/c128128/HACLIProxyA
 
 ### Installation
 
-1. Install this integration via HACS or manually copy the `custom_components/azure_openai_conversation` folder to your Home Assistant config directory.
+1. Install this integration via HACS:
+
+   [![image](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=c128128&repository=openai-ha&category=integration)
 
 2. Restart Home Assistant.
 
@@ -29,7 +29,7 @@ Follow [HACLIProxyAPI setup instructions](https://github.com/c128128/HACLIProxyA
      (or `http://localhost:8787/v1` if running in Docker)
    - **API Key**: Enter any value (e.g., `sk-placeholder`) - the proxy handles authentication
 
-6. Select your preferred model from the available options.
+6. Uncheck **Recommended model settings** and set a custom **Model** name. You can check available models at: `http://homeassistant.local:8787/v1/models`
 
 7. Go to **Settings** → **Voice Assistants** and create or edit an assistant to use the new OpenAI conversation agent.
 
